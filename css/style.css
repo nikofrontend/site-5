@@ -96,6 +96,7 @@ section {
   font-size: 45px;
   line-height: 58px;
   text-transform: capitalize;
+  max-width: 523px;
 }
 
 .header__top {
@@ -215,4 +216,15 @@ section {
   font-size: 40px;
   line-height: 52px;
   max-width: 265px;
+}
+
+.about {
+  background-color: #F9F8F8;
+}
+.about__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.about-title {
+  margin-bottom: 21px;
 }/*# sourceMappingURL=style.css.map */
