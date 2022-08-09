@@ -219,3 +219,28 @@ section {
         border-radius: 50%;
     }
 }
+
+.advantages {
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        padding: 105px 0 105px 55px;
+        border-radius: 30px;
+        width: 100%;
+    }
+
+    &__item:first-child {
+        color: #fff;
+    }
+
+    &-title {
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 52px;
+        max-width: 265px;
+    }
+}

@@ -195,4 +195,24 @@ section {
   right: 11px;
   top: 22px;
   border-radius: 50%;
+}
+
+.advantages__items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.advantages__item {
+  padding: 105px 0 105px 55px;
+  border-radius: 30px;
+  width: 100%;
+}
+.advantages__item:first-child {
+  color: #fff;
+}
+.advantages-title {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+  max-width: 265px;
 }/*# sourceMappingURL=style.css.map */
