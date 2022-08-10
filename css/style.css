@@ -99,6 +99,37 @@ section {
   max-width: 523px;
 }
 
+.btn {
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0.4px;
+  text-transform: capitalize;
+  border-radius: 16px;
+  padding: 25px 71px 25px 33px;
+  position: relative;
+}
+
+.btn::after {
+  position: absolute;
+  content: "";
+  background-image: url("../images/icons/arrow-btn.svg");
+  width: 17px;
+  height: 13px;
+  right: 21px;
+  top: 32px;
+}
+
+.btn::before {
+  position: absolute;
+  content: "";
+  background-color: #335B6B;
+  width: 38px;
+  height: 34px;
+  right: 11px;
+  top: 22px;
+  border-radius: 50%;
+}
+
 .header__top {
   display: flex;
   justify-content: space-between;
@@ -168,34 +199,9 @@ section {
   margin-bottom: 55px;
 }
 .header__btn {
-  font-size: 20px;
-  line-height: 32px;
-  text-transform: capitalize;
   color: #274C5B;
   background-color: #EFD372;
   border: 1px solid #EFD372;
-  border-radius: 16px;
-  padding: 25px 71px 25px 33px;
-  position: relative;
-}
-.header__btn::after {
-  position: absolute;
-  content: "";
-  background-image: url("../images/icons/arrow-btn.svg");
-  width: 17px;
-  height: 13px;
-  right: 21px;
-  top: 32px;
-}
-.header__btn::before {
-  position: absolute;
-  content: "";
-  background-color: #335B6B;
-  width: 38px;
-  height: 34px;
-  right: 11px;
-  top: 22px;
-  border-radius: 50%;
 }
 
 .advantages__items {
@@ -227,4 +233,29 @@ section {
 }
 .about-title {
   margin-bottom: 21px;
+}
+.about-text {
+  margin-bottom: 50px;
+}
+.about__items {
+  margin-bottom: 55px;
+}
+.about__item {
+  display: flex;
+  margin-bottom: 30px;
+}
+.about__item-img {
+  margin-right: 20px;
+}
+.about__item-title {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 35px;
+  color: #274C5B;
+}
+.about-btn {
+  background: #274C5B;
+  border: 1px solid #274C5B;
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */
