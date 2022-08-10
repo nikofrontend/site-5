@@ -293,3 +293,109 @@ section {
         color: #fff;
     }
 }
+
+.products {
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        justify-items: center;
+    }
+
+    &__item {
+        background-color: #F9F8F8;
+        border-radius: 30px;
+        max-width: 447px;
+        height: 590px;
+        padding: 67px 30px 35px 30px;
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+    &__img-box {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    &__item-title {
+        font-family: 'Roboto',
+            sans-serif;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 35px;
+        letter-spacing: 0.36px;
+        color: #274C5B;
+        padding-bottom: 11px;
+        border-bottom: 1px solid #D4D4D4;
+        margin-bottom: 10px;
+    }
+
+    &__item-textbox {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__item-price {
+        display: flex;
+    }
+
+    &__price-old {
+        color: #B8B8B8;
+        text-decoration: line-through;
+        margin-right: 15px;
+    }
+
+    &__price-new {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    &__item--vegetable::after {
+        position: absolute;
+        content: 'Vegetable';
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 27px;
+        color: #FFFFFF;
+        top: 35px;
+        left: 50px;
+    }
+
+    &__item--millets::after {
+        position: absolute;
+        content: 'Millets';
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 27px;
+        color: #FFFFFF;
+        top: 35px;
+        left: 57px;
+    }
+
+    &__item--fruits::after {
+        position: absolute;
+        content: 'Fruits';
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 27px;
+        color: #FFFFFF;
+        top: 35px;
+        left: 63px;
+    }
+
+    &__item--vegetable::before,
+    &__item--millets::before,
+    &__item--fruits::before {
+        position: absolute;
+        content: '';
+        background: #274C5B;
+        border-radius: 8px;
+        top: 30px;
+        left: 28px;
+        height: 37px;
+        width: 118px;
+    }
+}
