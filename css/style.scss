@@ -399,3 +399,96 @@ section {
         width: 118px;
     }
 }
+
+.review {
+    &__inner {
+        text-align: center;
+    }
+
+    &-title {
+        max-width: 100%;
+        margin-bottom: 60px;
+    }
+
+    &__item {
+        text-align: center;
+        max-width: 966px;
+        margin: 0 auto;
+        padding-bottom: 95px;
+        border-bottom: 2px solid #E0E0E0;
+        margin-bottom: 100px;
+    }
+
+    &__item-img {
+        margin-bottom: 18px;
+    }
+
+    &__item-img img {
+        margin: 0 auto;
+        border-radius: 50%;
+    }
+
+    &-star {
+        margin: 0 auto;
+        margin-bottom: 33px;
+    }
+
+    &__item-text {
+        margin-bottom: 23px;
+        max-width: 940px;
+    }
+
+    &__item-name {
+        font-family: 'Roboto';
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 34px;
+        color: #274C5B;
+    }
+
+    &__item-user {
+        font-size: 14px;
+        line-height: 27px;
+    }
+
+    &__levels {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        max-width: 1104px;
+        margin: 0 auto;
+    }
+
+    &__levels-item {
+        background-color: #F1F1F1;
+        width: 250px;
+        height: 250px;
+        border: 6px solid #7EB693;
+        border-radius: 200px;
+    }
+
+    &__levels-border {
+        width: 240px;
+        height: 240px;
+        border: 5px solid #FFFFFF;
+        border-radius: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #274C5B;
+    }
+
+    &__levels-num {
+        font-family: 'Roboto';
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 55px;
+    }
+
+    &__levels-text {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 32px;
+    }
+}
