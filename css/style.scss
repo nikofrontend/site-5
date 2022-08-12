@@ -740,3 +740,112 @@ section {
         font-weight: 700;
     }
 }
+
+.footer {
+    padding: 130px 0 0;
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        height: 369px;
+        margin-bottom: 150px;
+    }
+
+    &__top-contact {
+        text-align: right;
+        position: relative;
+        padding-right: 20px;
+    }
+
+    &__top-contact::after {
+        position: absolute;
+        content: '';
+        width: 1px;
+        background-color: #D5D5D5;
+        height: 100%;
+        top: 0;
+        right: 0;
+    }
+
+    &__top-title {
+        margin-bottom: 35px;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 42px;
+        color: #274C5B;
+    }
+
+    &__top-contact__title {
+        font-weight: 700;
+        line-height: 23px;
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+
+    &__top-contact__link {
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    &__top-contact__item:not(:last-child) {
+        margin-bottom: 40px;
+    }
+
+    &__top-info__logo {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 44px;
+    }
+
+    &__top-info__text {
+        max-width: 570px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    &__top-social__list {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__social-item:not(:last-child) {
+        margin-right: 20px;
+    }
+
+    &__social-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: #EFF6F1;
+    }
+
+    &__top-utility {
+        text-align: left;
+        padding-left: 20px;
+        position: relative;
+    }
+
+    &__top-utility::after {
+        position: absolute;
+        content: '';
+        width: 1px;
+        background-color: #D5D5D5;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    &__top-utility__item:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 23px 0;
+    }
+}
