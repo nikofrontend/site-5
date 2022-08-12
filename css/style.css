@@ -599,4 +599,54 @@ section {
   height: 20px;
   right: 18px;
   top: 13px;
+}
+
+.subscribe__inner {
+  border-radius: 30px;
+  padding: 100px 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.subscribe-title {
+  font-size: 50px;
+  line-height: 60px;
+  color: #FFFFFF;
+}
+.subscribe__form-input {
+  background-color: #FFFFFF;
+  border: 1px solid #CCCCCC;
+  border-radius: 16px;
+  padding: 26px 110px 26px 20px;
+  margin-right: 10px;
+}
+.subscribe__form-input::-moz-placeholder {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 29px;
+  letter-spacing: 0.36px;
+  color: #525C60;
+}
+.subscribe__form-input:-ms-input-placeholder {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 29px;
+  letter-spacing: 0.36px;
+  color: #525C60;
+}
+.subscribe__form-input::placeholder {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 29px;
+  letter-spacing: 0.36px;
+  color: #525C60;
+}
+.subscribe-btn {
+  background: #274C5B;
+  border: 1px solid #274C5B;
+  color: #fff;
+  font-weight: 700;
 }/*# sourceMappingURL=style.css.map */

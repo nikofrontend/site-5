@@ -699,3 +699,44 @@ section {
         top: 13px;
     }
 }
+
+.subscribe {
+
+    &__inner {
+        border-radius: 30px;
+        padding: 100px 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &-title {
+        font-size: 50px;
+        line-height: 60px;
+        color: #FFFFFF;
+    }
+
+    &__form-input {
+        background-color: #FFFFFF;
+        border: 1px solid #CCCCCC;
+        border-radius: 16px;
+        padding: 26px 110px 26px 20px;
+        margin-right: 10px;
+    }
+
+    &__form-input::placeholder {
+        font-family: 'Open Sans';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 29px;
+        letter-spacing: 0.36px;
+        color: #525C60;
+    }
+
+    &-btn {
+        background: #274C5B;
+        border: 1px solid #274C5B;
+        color: #fff;
+        font-weight: 700;
+    }
+}
