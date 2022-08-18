@@ -224,6 +224,9 @@ section {
   background-color: #EFD372;
   border: 1px solid #EFD372;
 }
+.header__menu-btn {
+  display: none;
+}
 
 .advantages__items {
   display: flex;
@@ -762,4 +765,94 @@ section {
   justify-content: center;
   align-items: center;
   padding: 23px 0;
+}
+
+@media (max-width: 992px) {
+  .lock-scroll {
+    overflow: hidden;
+  }
+  .header__top {
+    flex-wrap: wrap;
+  }
+  .header__menu-btn {
+    display: block;
+    background-color: transparent;
+    border: none;
+    z-index: 999;
+    position: absolute;
+    right: 0;
+  }
+  .header__top-cart {
+    margin-right: 45px;
+    margin-top: 10px;
+  }
+  .header__menu-btn path {
+    transition: transform 0.25s;
+  }
+  .header__menu-btn--active path:nth-of-type(1) {
+    transform: rotate(45deg);
+    transform-origin: -1px 3px;
+  }
+  .header__menu-btn--active path:nth-of-type(2) {
+    display: none;
+  }
+  .header__menu-btn--active path:nth-of-type(3) {
+    transform: rotate(-45deg);
+    transform-origin: 0px 13px;
+  }
+  .header__top-nav {
+    display: block;
+    position: absolute;
+    transform: translateY(-200%);
+    transition: all 0.3s;
+    height: 100vh;
+    z-index: 999;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 100px 0 15px;
+  }
+  .header__top-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .header__top-nav--active {
+    transform: translateY(0%);
+  }
+  .header__top-item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  .title-subtitle {
+    font-size: 32px;
+    line-height: 55px;
+  }
+  .title {
+    font-size: 44px;
+    line-height: 52px;
+  }
+}
+@media (max-width: 768px) {
+  .header__top {
+    padding: 20px 0;
+  }
+  .title-subtitle {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .title {
+    font-size: 42px;
+    line-height: 48px;
+  }
+}
+@media (max-width: 440px) {
+  .title-subtitle {
+    font-size: 28px;
+    line-height: 30px;
+  }
+  .title {
+    font-size: 36px;
+    line-height: 42px;
+  }
 }/*# sourceMappingURL=style.css.map */
