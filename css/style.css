@@ -45,6 +45,7 @@ a {
   text-decoration: none;
   cursor: pointer;
   color: #274C5B;
+  transition: all 0.5s;
 }
 
 input,
@@ -56,6 +57,7 @@ select {
 
 button {
   cursor: pointer;
+  transition: all 0.5s;
 }
 
 body {
@@ -140,8 +142,8 @@ section {
 .header__top-list {
   display: flex;
 }
-.header__top-cart {
-  display: flex;
+.header__top-logo:hover, .header__top-logo:active {
+  opacity: 0.5;
 }
 .header__cart-text {
   display: flex;
@@ -159,21 +161,39 @@ section {
 .header__top-link--active {
   color: #7EB693;
 }
+.header__top-link:hover {
+  color: #7EB693;
+}
+.header__top-link:active {
+  border-bottom: 1px solid #7EB693;
+}
 .header__top-cart {
   border: 1px solid #D4D4D4;
   border-radius: 33px;
   padding: 7px 11px;
+  display: flex;
+}
+.header__cart-link:hover {
+  background-color: #fff;
+}
+.header__cart-link:active {
+  border: 1px solid #000;
+}
+.header__cart-link:focus {
+  border: 3px solid #000;
+}
+.header__cart-link:hover path {
+  stroke: #274C5B;
 }
 .header__cart-link {
-  background: #274C5B;
+  background-color: #274C5B;
   border-radius: 100px;
   width: 56px;
   height: 56px;
   margin-right: 12px;
-}
-.header__cart-link img {
-  margin: auto;
-  margin-top: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .header__cart-text {
   display: flex;
