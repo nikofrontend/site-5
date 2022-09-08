@@ -756,6 +756,7 @@ section {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
     }
 
     &-title {
@@ -1135,6 +1136,26 @@ section {
             margin-bottom: 60px;
         }
     }
+
+    .subscribe {
+        &__form-input {
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
+
+        &__inner {
+            padding: 60px 35px;
+        }
+
+        &-title {
+            margin-bottom: 10px;
+        }
+
+        &__form {
+            display: flex;
+            flex-direction: column;
+        }
+    }
 }
 
 @media (max-width: 450px) {
@@ -1235,6 +1256,16 @@ section {
 
         &__inner-box {
             margin-bottom: 40px;
+        }
+    }
+
+    .subscribe {
+        &__inner {
+            padding: 20px 25px;
+        }
+
+        &__form-input {
+            padding: 23px 20px 23px 15px;
         }
     }
 }

@@ -647,6 +647,7 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 .subscribe-title {
   font-size: 50px;
@@ -956,6 +957,20 @@ section {
   .news__inner-box {
     margin-bottom: 60px;
   }
+  .subscribe__form-input {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .subscribe__inner {
+    padding: 60px 35px;
+  }
+  .subscribe-title {
+    margin-bottom: 10px;
+  }
+  .subscribe__form {
+    display: flex;
+    flex-direction: column;
+  }
 }
 @media (max-width: 450px) {
   section {
@@ -1026,5 +1041,11 @@ section {
   }
   .news__inner-box {
     margin-bottom: 40px;
+  }
+  .subscribe__inner {
+    padding: 20px 25px;
+  }
+  .subscribe__form-input {
+    padding: 23px 20px 23px 15px;
   }
 }/*# sourceMappingURL=style.css.map */
