@@ -21,3 +21,13 @@
     $('.header__top-nav').toggleClass('header__top-nav--active');
     $('body').toggleClass('lock-scroll');
   });
+
+
+  $(" .header__top-link, .header__top-logo").on("click", function (e) {
+    e.preventDefault();
+    var id = $(this).attr('href'),
+      top = $(id).offset().top;
+    $('body,html').animate({
+      scrollTop: top
+    }, 1500);
+  });
