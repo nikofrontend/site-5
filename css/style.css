@@ -131,6 +131,19 @@ section {
   right: 11px;
   top: 22px;
   border-radius: 50%;
+  transition: all 0.5s;
+}
+
+.btn:hover::before {
+  right: 7px;
+}
+
+.btn:hover::after {
+  right: 17px;
+}
+
+.btn:active {
+  opacity: 0.5;
 }
 
 .header__top {
@@ -224,6 +237,17 @@ section {
   background-color: #EFD372;
   border: 1px solid #EFD372;
 }
+.header__btn:hover::before {
+  background-color: #EFD372;
+}
+.header__btn:hover {
+  background-color: #274C5B;
+  border: 1px solid #274C5B;
+  color: #EFD372;
+}
+.header__btn:focus {
+  border: 5px solid #274C5B;
+}
 .header__menu-btn {
   display: none;
 }
@@ -237,6 +261,10 @@ section {
   padding: 105px 0 105px 55px;
   border-radius: 30px;
   width: 100%;
+  transition: all 0.5s;
+}
+.advantages__item:hover {
+  box-shadow: 0px 0px 8px 9px rgba(34, 60, 80, 0.2);
 }
 .advantages__item:first-child {
   color: #fff;
@@ -280,9 +308,17 @@ section {
   color: #274C5B;
 }
 .about-btn {
-  background: #274C5B;
+  background-color: #274C5B;
   border: 1px solid #274C5B;
   color: #fff;
+}
+.about-btn:hover {
+  background-color: #EFD372;
+  border: 1px solid #274C5B;
+  color: #fff;
+}
+.about-btn:focus {
+  border: 5px solid #274C5B;
 }
 
 .products {
@@ -306,6 +342,11 @@ section {
   padding: 67px 30px 35px 30px;
   position: relative;
   margin-bottom: 10px;
+  cursor: pointer;
+}
+.products__item:hover {
+  box-shadow: 0px 0px 8px 3px rgba(34, 60, 80, 0.2);
+  transition: all 0.5s;
 }
 .products__img-box {
   display: flex;
@@ -436,6 +477,10 @@ section {
   border: 6px solid #7EB693;
   border-radius: 200px;
 }
+.review__levels-item:hover {
+  border: 6px solid #EFD372;
+  transition: all 0.5s;
+}
 .review__levels-border {
   width: 240px;
   height: 240px;
@@ -475,6 +520,17 @@ section {
   border: 1px solid #EFD372;
   color: #274C5B;
   align-self: flex-start;
+}
+.offer__box-btn:hover {
+  background-color: #274C5B;
+  border: 1px solid #EFD372;
+  color: #EFD372;
+}
+.offer .btn:hover::before {
+  background-color: #EFD372;
+}
+.offer .btn:focus {
+  border: 5px solid #EFD372;
 }
 
 .eco {
@@ -534,6 +590,10 @@ section {
   align-items: center;
   margin-bottom: 10px;
 }
+.organic__item:hover {
+  box-shadow: 0px 0px 8px 9px rgba(34, 60, 80, 0.2);
+  transition: all 0.5s;
+}
 .organic__item-box {
   height: 95px;
   width: 280px;
@@ -571,6 +631,13 @@ section {
   border: 1px solid #274C5B;
   align-self: flex-end;
 }
+.news__box-btn:hover {
+  background-color: #274C5B;
+  color: #fff;
+}
+.news__box-btn:focus {
+  border: 5px solid #274C5B;
+}
 .news__items {
   display: flex;
   justify-content: space-around;
@@ -579,6 +646,11 @@ section {
 }
 .news__item {
   position: relative;
+  transition: all 0.5s;
+  border-radius: 30px;
+}
+.news__item:hover {
+  box-shadow: 0px 0px 8px 9px rgba(34, 60, 80, 0.2);
 }
 .news__item-box {
   background-color: #fff;
@@ -625,6 +697,14 @@ section {
 }
 .news__item-btn {
   padding: 10px 50px 10px 4px;
+  border-radius: 0;
+  transition: all 0.5s;
+}
+.news__item-btn:hover {
+  border-bottom: 1px solid #274C5B;
+}
+.news__item-btn:focus {
+  border-bottom: 3px solid #274C5B;
 }
 .news .news__item-btn.btn::after {
   background-image: url("../images/icons/arrow-btn__small.svg");
@@ -686,10 +766,16 @@ section {
   color: #525C60;
 }
 .subscribe-btn {
-  background: #274C5B;
+  background-color: #274C5B;
   border: 1px solid #274C5B;
   color: #fff;
   font-weight: 700;
+}
+.subscribe-btn:hover {
+  background-color: #EFD372;
+}
+.subscribe-btn:focus {
+  border: 5px solid #274C5B;
 }
 
 .footer {
@@ -731,6 +817,12 @@ section {
   font-size: 18px;
   line-height: 32px;
 }
+.footer__top-contact__link:hover {
+  opacity: 0.5;
+}
+.footer__top-contact__link:active {
+  font-weight: 700;
+}
 .footer__top-contact__item:not(:last-child) {
   margin-bottom: 40px;
 }
@@ -758,6 +850,16 @@ section {
   height: 60px;
   border-radius: 50%;
   background-color: #EFF6F1;
+}
+.footer__social-item {
+  transition: all 0.5s;
+  border-radius: 50%;
+}
+.footer__social-item:hover {
+  opacity: 0.5;
+}
+.footer__social-item:active {
+  border: 1px solid #274C5B;
 }
 .footer__top-utility {
   text-align: left;

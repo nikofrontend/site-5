@@ -135,6 +135,19 @@ section {
     right: 11px;
     top: 22px;
     border-radius: 50%;
+    transition: all 0.5s;
+}
+
+.btn:hover::before {
+    right: 7px;
+}
+
+.btn:hover::after {
+    right: 17px;
+}
+
+.btn:active {
+    opacity: 0.5;
 }
 
 .header {
@@ -255,6 +268,20 @@ section {
         border: 1px solid #EFD372;
     }
 
+    &__btn:hover::before {
+        background-color: #EFD372;
+    }
+
+    &__btn:hover {
+        background-color: #274C5B;
+        border: 1px solid #274C5B;
+        color: #EFD372;
+    }
+
+    &__btn:focus {
+        border: 5px solid #274C5B;
+    }
+
     &__menu-btn {
         display: none;
     }
@@ -271,6 +298,11 @@ section {
         padding: 105px 0 105px 55px;
         border-radius: 30px;
         width: 100%;
+        transition: all 0.5s;
+    }
+
+    &__item:hover {
+        box-shadow: 0px 0px 8px 9px rgba(34, 60, 80, 0.2);
     }
 
     &__item:first-child {
@@ -324,9 +356,19 @@ section {
     }
 
     &-btn {
-        background: #274C5B;
+        background-color: #274C5B;
         border: 1px solid #274C5B;
         color: #fff;
+    }
+
+    &-btn:hover {
+        background-color: #EFD372;
+        border: 1px solid #274C5B;
+        color: #fff;
+    }
+
+    &-btn:focus {
+        border: 5px solid #274C5B;
     }
 }
 
@@ -353,6 +395,12 @@ section {
         padding: 67px 30px 35px 30px;
         position: relative;
         margin-bottom: 10px;
+        cursor: pointer;
+    }
+
+    &__item:hover {
+        box-shadow: 0px 0px 8px 3px rgba(34, 60, 80, 0.2);
+        transition: all 0.5s;
     }
 
     &__img-box {
@@ -509,6 +557,11 @@ section {
         border-radius: 200px;
     }
 
+    &__levels-item:hover {
+        border: 6px solid #EFD372;
+        transition: all 0.5s;
+    }
+
     &__levels-border {
         width: 240px;
         height: 240px;
@@ -553,6 +606,20 @@ section {
         border: 1px solid #EFD372;
         color: #274C5B;
         align-self: flex-start;
+    }
+
+    &__box-btn:hover {
+        background-color: #274C5B;
+        border: 1px solid #EFD372;
+        color: #EFD372;
+    }
+
+    .btn:hover::before {
+        background-color: #EFD372;
+    }
+
+    .btn:focus {
+        border: 5px solid #EFD372;
     }
 }
 
@@ -622,6 +689,11 @@ section {
         margin-bottom: 10px;
     }
 
+    &__item:hover {
+        box-shadow: 0px 0px 8px 9px rgba(34, 60, 80, 0.2);
+        transition: all 0.5s;
+    }
+
     &__item-box {
         height: 95px;
         width: 280px;
@@ -666,6 +738,15 @@ section {
         align-self: flex-end;
     }
 
+    &__box-btn:hover {
+        background-color: #274C5B;
+        color: #fff;
+    }
+
+    &__box-btn:focus {
+        border: 5px solid #274C5B;
+    }
+
     &__items {
         display: flex;
         justify-content: space-around;
@@ -675,6 +756,12 @@ section {
 
     &__item {
         position: relative;
+        transition: all 0.5s;
+        border-radius: 30px;
+    }
+
+    &__item:hover {
+        box-shadow: 0px 0px 8px 9px rgba(34, 60, 80, 0.2);
     }
 
     &__item-box {
@@ -729,6 +816,16 @@ section {
 
     &__item-btn {
         padding: 10px 50px 10px 4px;
+        border-radius: 0;
+        transition: all 0.5s;
+    }
+
+    &__item-btn:hover {
+        border-bottom: 1px solid #274C5B;
+    }
+
+    &__item-btn:focus {
+        border-bottom: 3px solid #274C5B;
     }
 
     .news__item-btn.btn::after {
@@ -783,10 +880,18 @@ section {
     }
 
     &-btn {
-        background: #274C5B;
+        background-color: #274C5B;
         border: 1px solid #274C5B;
         color: #fff;
         font-weight: 700;
+    }
+
+    &-btn:hover {
+        background-color: #EFD372;
+    }
+
+    &-btn:focus {
+        border: 5px solid #274C5B;
     }
 }
 
@@ -835,6 +940,14 @@ section {
         line-height: 32px;
     }
 
+    &__top-contact__link:hover {
+        opacity: 0.5;
+    }
+
+    &__top-contact__link:active {
+        font-weight: 700;
+    }
+
     &__top-contact__item:not(:last-child) {
         margin-bottom: 40px;
     }
@@ -866,6 +979,19 @@ section {
         height: 60px;
         border-radius: 50%;
         background-color: #EFF6F1;
+    }
+
+    &__social-item {
+        transition: all 0.5s;
+        border-radius: 50%;
+    }
+
+    &__social-item:hover {
+        opacity: 0.5;
+    }
+
+    &__social-item:active {
+        border: 1px solid #274C5B;
     }
 
     &__top-utility {
