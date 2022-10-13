@@ -217,6 +217,13 @@ section {
   max-width: 530px;
   color: #274C5B;
   padding: 220px 0 250px;
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 0.5s;
+}
+.header__offer--active {
+  transform: translate(0px, 0%);
+  opacity: 1;
 }
 .header-subtitle {
   margin-bottom: 14px;
